@@ -29,7 +29,7 @@ int main(int ac, char **av)
 		if (chk == 1)
 		{
 			path = _getenv("PATH");
-			count_2 = count_path_tokens(pat);
+			count_2 = count_path_tokens(path);
 			path_ev = path_list(path, count_2);
 			if (stat(av[0], &st) == 0)
 				run_exe(av, path);
